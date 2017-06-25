@@ -82,8 +82,7 @@
             android:gravity="top"
             android:hint="일기 쓰는곳"
             android:inputType="text|textMultiLine"
-            android:textAppearance="@style/TextAppearance.AppCompat.Button"
-            android:textColorLink="?android:attr/colorEdgeEffect" />
+            />
     </TableRow>
 
     <TableRow>
