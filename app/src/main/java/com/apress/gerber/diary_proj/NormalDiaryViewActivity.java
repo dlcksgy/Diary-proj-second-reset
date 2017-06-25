@@ -36,6 +36,9 @@ public class NormalDiaryViewActivity extends AppCompatActivity{
 
         String title = diaryName.split("  ",2)[1];
 
+        TextView titleTextView = (TextView) findViewById(R.id.titleTextView);
+
+        titleTextView.setText("제목:" + title);
 
 
         try {
