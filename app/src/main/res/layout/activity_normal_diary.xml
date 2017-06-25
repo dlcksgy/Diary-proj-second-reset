@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+
+    <TableRow>
+        <Button
+            android:id="@+id/temaButton"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="배경" />
+        <Button
+            android:id="@+id/dateButton"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text="오늘날짜" />
+
+    </TableRow>
+
+
+
+    <TableRow>
+
+        <EditText
+            android:id="@+id/yearText"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="date"
+            android:text="년"
+            android:textColorLink="@color/color_21a4ff"
+            tools:textColorLink="@color/color_21a4ff" />
+
+        <EditText
+            android:id="@+id/monthText"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="date"
+            android:text="월"
+            android:textColorLink="@color/color_21a4ff" />
+
+        <EditText
+            android:id="@+id/dayText"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="top"
+            android:inputType="date"
+            android:text="일"
+            android:textColorLink="@color/color_21a4ff" />
+
+    </TableRow>
+
+
+    <TableRow>
+
+        <EditText
+            android:id="@+id/titleText"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+
+            android:text="제목"
+            android:textColorLink="@color/color_21a4ff" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/diaryEditText"
+            android:layout_width="120dp"
+            android:layout_height="337dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="일기 쓰는곳"
+            android:inputType="text|textMultiLine"
+            android:textColorLink="?android:attr/colorEdgeEffect" />
+    </TableRow>
+
+    <TableRow>
+
+       <Button
+           android:id="@+id/saveButton"
+           android:layout_width="70dp"
+           android:layout_height="wrap_content"
+           android:text="저장" />
+   </TableRow>
+
+
+</TableLayout>

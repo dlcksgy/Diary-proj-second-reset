@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+<TableRow>
+
+    <TextView
+        android:id="@+id/diaryTitle"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/correctButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="수정" />
+
+
+</TableRow>
+<TableRow>
+
+    <TextView
+        android:id="@+id/normalDiaryView"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_weight="0.90"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+</TableRow>
+
+</TableLayout>
