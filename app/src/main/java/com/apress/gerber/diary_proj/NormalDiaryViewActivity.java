@@ -34,7 +34,8 @@ public class NormalDiaryViewActivity extends AppCompatActivity{
 
         String line;
 
-        String title;
+        String title = diaryName.split("  ",2)[1];
+
 
 
         try {
