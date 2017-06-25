@@ -45,7 +45,7 @@ public class NormalDiaryViewActivity extends AppCompatActivity{
             BufferedReader bufr = new BufferedReader(fr);
             line = bufr.readLine();
             while(line!=null){
-                normalDiaryView.append(line);
+                normalDiaryView.append(line + "\n");
                 line = bufr.readLine();
             }
 
