@@ -30,11 +30,10 @@ public class NormalDiaryViewActivity extends AppCompatActivity{
 
         TextView normalDiaryView = (TextView) findViewById(R.id.normalDiaryView);
 
-        Button correctButton = (Button) findViewById(R.id.correctButton);
 
         String line;
 
-        String title = diaryName.split("  ",2)[1];
+        String title = diaryName.split(" ",2)[1];
 
         TextView titleTextView = (TextView) findViewById(R.id.titleTextView);
 

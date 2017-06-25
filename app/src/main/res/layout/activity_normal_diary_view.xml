@@ -7,16 +7,10 @@
 
     <TextView
         android:id="@+id/titleTextView"
-        android:layout_width="250dp"
+        android:layout_width="300dp"
         android:layout_height="match_parent"
         android:text="TextView"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
-
-    <Button
-        android:id="@+id/correctButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="수정" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
 
 </TableRow>
@@ -27,7 +21,7 @@
         android:layout_width="match_parent"
         android:layout_height="450dp"
         android:layout_weight="0.90"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
 </TableRow>
 
