@@ -40,6 +40,9 @@
         <activity android:name=".DiaryListActivity">
 
         </activity>
+        <activity android:name=".PictureDiaryActivity">
+
+        </activity>
     </application>
 
 </manifest>

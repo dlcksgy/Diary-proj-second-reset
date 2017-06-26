@@ -43,7 +43,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v){
 
-                //사진일기 레이어 호출
+                Intent intent = new Intent(getApplicationContext(),PictureDiaryActivity.class);
+                startActivity(intent);
 
             }
         });

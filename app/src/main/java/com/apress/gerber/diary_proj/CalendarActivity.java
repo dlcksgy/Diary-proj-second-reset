@@ -209,10 +209,10 @@ public class CalendarActivity extends Activity {
         mCal.set(Calendar.MONTH, month - 1);
 
 
-
+        String isDiary = " ";
         for (int i = 0; i < mCal.getActualMaximum(Calendar.DAY_OF_MONTH); i++) {
 
-            dayList.add("" + (i + 1) + "\n  " );     //날짜적는부분
+            dayList.add("" + (i + 1) + "\n  " + isDiary);     //날짜적는부분
 
         }
 

@@ -1,6 +1,7 @@
 package com.apress.gerber.diary_proj;
 
 import android.annotation.TargetApi;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
@@ -51,6 +52,7 @@ public class PictureDiaryActivity extends AppCompatActivity {
         final EditText diaryEditText = (EditText) findViewById(R.id.diaryEditText);
         Button saveButton = (Button) findViewById(R.id.saveButton);
 
+        Button pictureButton = (Button) findViewById(R.id.pictureButton);
 
         Button dateButton = (Button) findViewById(R.id.dateButton);
 
@@ -75,6 +77,15 @@ public class PictureDiaryActivity extends AppCompatActivity {
             }
         });
 
+        pictureButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_PICK);
+                intent.setData(android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+                intent.setType("image/*");
+                startActivityForResult(Intent.createChooser(intent, "Select Picture"), 2);
+            }
+        });
 
 
         saveButton.setOnClickListener(new View.OnClickListener(){   //저장버튼 눌렀을 시 동작부
@@ -106,7 +117,7 @@ public class PictureDiaryActivity extends AppCompatActivity {
 
                 File file = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + "/Diaries/" + diary.getYear() +
                                                                      "/" + diary.getMonth() +
-                                                                     "/" + diary.getDay() +"일  "+ diary.getTitle() + "  .txt");
+                                                                     "/" + diary.getDay() +"일  (picture)"+ diary.getTitle() + "  .txt");
 
                 FileWriter fw = null;
                 BufferedWriter bufw = null;

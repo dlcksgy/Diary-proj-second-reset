@@ -83,6 +83,10 @@ public class Diary {
             Toast.makeText(context, "월을 똑바로 입력하세요.", Toast.LENGTH_SHORT).show();
             return 1;
         }
+        if((curYear==this.year)&&(curMonth<month)){
+            Toast.makeText(context,"미래의 일기는 지원하지 않습니다.", Toast.LENGTH_SHORT).show();
+            return 1;
+        }
         this.month = month;
         return 0;
     }
@@ -101,6 +105,10 @@ public class Diary {
                 case 2: case 4: case 6: case 9: case 11:
                     Toast.makeText(context, "이 달에 31일은 없 습 니 다 .",Toast.LENGTH_SHORT).show();
             }
+        }
+        if((curDay<day)&&(curYear==year)&&(curMonth==month)){
+            Toast.makeText(context, "미래의 일기는 쓸 수 없습니다.",Toast.LENGTH_SHORT).show();
+            return 1;
         }
         this.day = day;
         return 0;
