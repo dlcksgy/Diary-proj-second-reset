@@ -63,11 +63,11 @@ public class Diary {
 
     public int setYear(int year) {
         if(year <= curYear-2) {
-            Toast.makeText(context, "2년이상 지난 날의 일기는 작성,수정 할 수 없습니다.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "2년이상 지난 날의 일기는 작성,수정 할 수 없는데 이번만 봐드립니다.", Toast.LENGTH_SHORT).show();
             return 1;
         }
         if (curYear < year){
-            Toast.makeText(context, "미래일기는 지원하지 않습니다.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "미래일기를 쓰셧습니다!", Toast.LENGTH_SHORT).show();
             return 1;
         }
         this.year = year;
@@ -84,7 +84,7 @@ public class Diary {
             return 1;
         }
         if((curYear==this.year)&&(curMonth<month)){
-            Toast.makeText(context,"미래의 일기는 지원하지 않습니다.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(context,"미래일기를 쓰셧습니다!", Toast.LENGTH_SHORT).show();
             return 1;
         }
         this.month = month;
@@ -107,7 +107,7 @@ public class Diary {
             }
         }
         if((curDay<day)&&(curYear==year)&&(curMonth==month)){
-            Toast.makeText(context, "미래의 일기는 쓸 수 없습니다.",Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "미래일기를 쓰셧습니다!",Toast.LENGTH_SHORT).show();
             return 1;
         }
         this.day = day;
